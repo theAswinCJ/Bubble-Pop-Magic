@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Page,
   Navbar,
@@ -15,18 +15,28 @@ import {
   Row,
   Col,
   Button
-} from 'framework7-react';
+} from "framework7-react";
 
 export default () => (
   <Page name="home">
     {/* Top Navbar */}
     <Navbar sliding={false} large>
       <NavLeft>
-        <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="left" />
+        <Link
+          iconIos="f7:menu"
+          iconAurora="f7:menu"
+          iconMd="material:menu"
+          panelOpen="left"
+        />
       </NavLeft>
       <NavTitle sliding>Bubble Pop Magic</NavTitle>
       <NavRight>
-        <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="right" />
+        <Link
+          iconIos="f7:menu"
+          iconAurora="f7:menu"
+          iconMd="material:menu"
+          panelOpen="right"
+        />
       </NavRight>
       <NavTitleLarge>Bubble Pop Magic</NavTitleLarge>
     </Navbar>
@@ -42,18 +52,23 @@ export default () => (
 
     <BlockTitle>Navigation</BlockTitle>
     <List>
-      <ListItem link="/about/" title="About"/>
-      <ListItem link="/form/" title="Form"/>
+      <ListItem link="/form/" title="About" />
+      <ListItem link="/form/" title="Form" />
+      <ListItem link="/about/" title="Form" />
     </List>
 
     <BlockTitle>Modals</BlockTitle>
     <Block strong>
       <Row>
         <Col width="50">
-          <Button fill raised popupOpen="#my-popup">Popup</Button>
+          <Button fill raised popupOpen="#my-popup">
+            Popup
+          </Button>
         </Col>
         <Col width="50">
-          <Button fill raised loginScreenOpen="#my-login-screen">Login Screen</Button>
+          <Button fill raised loginScreenOpen="#my-login-screen">
+            Login Screen
+          </Button>
         </Col>
       </Row>
     </Block>
@@ -62,10 +77,14 @@ export default () => (
     <Block strong>
       <Row>
         <Col width="50">
-          <Button fill raised panelOpen="left">Left Panel</Button>
+          <Button fill raised panelOpen="left">
+            Left Panel
+          </Button>
         </Col>
         <Col width="50">
-          <Button fill raised panelOpen="right">Right Panel</Button>
+          <Button fill raised panelOpen="right">
+            Right Panel
+          </Button>
         </Col>
       </Row>
     </Block>
@@ -84,6 +103,5 @@ export default () => (
         link="/request-and-load/user/123456/"
       />
     </List>
-
   </Page>
 );
